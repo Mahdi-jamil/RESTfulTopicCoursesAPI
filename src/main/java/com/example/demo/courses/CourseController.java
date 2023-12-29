@@ -16,7 +16,7 @@ public class CourseController {
         return courseService.getAllCourses(id);
     }
 
-    @RequestMapping("/topics/{Tid}/courses/{Cid}")// just put same var name -> no need to ("course") extra help
+    @RequestMapping("/topics/{Tid}/courses/{Cid}")
     public Course getcourse(@PathVariable("Cid") String id) {
         return courseService.getCourse(id);
     }
