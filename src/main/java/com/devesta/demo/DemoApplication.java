@@ -1,12 +1,12 @@
-package com.example.demo;
+package com.devesta.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 
-@EntityScan(basePackages = "com.example.demo")
-@ComponentScan(basePackages = "com.example.demo")
+@EntityScan(basePackages = "com.devesta.demo")
+@ComponentScan(basePackages = "com.devesta.demo")
 @SpringBootApplication
 public class DemoApplication {
 

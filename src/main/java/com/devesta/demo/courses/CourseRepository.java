@@ -1,4 +1,4 @@
-package com.example.demo.courses;
+package com.devesta.demo.courses;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

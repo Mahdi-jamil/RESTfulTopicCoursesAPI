@@ -1,6 +1,6 @@
-package com.example.demo.courses;
+package com.devesta.demo.courses;
 
-import com.example.demo.topics.Topic;
+import com.devesta.demo.topics.Topic;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

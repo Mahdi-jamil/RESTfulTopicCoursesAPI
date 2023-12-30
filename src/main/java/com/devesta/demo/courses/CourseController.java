@@ -1,6 +1,6 @@
-package com.example.demo.courses;
+package com.devesta.demo.courses;
 
-import com.example.demo.topics.Topic;
+import com.devesta.demo.topics.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

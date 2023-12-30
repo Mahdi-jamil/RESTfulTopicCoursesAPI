@@ -1,4 +1,4 @@
-package com.example.demo.topics;
+package com.devesta.demo.topics;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
