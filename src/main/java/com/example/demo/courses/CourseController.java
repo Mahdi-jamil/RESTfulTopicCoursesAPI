@@ -7,36 +7,40 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/topics")
 public class CourseController {
+
+    private final CourseService courseService;
+
     @Autowired
-    private CourseService courseService;
-
-    @RequestMapping("/topics/{id}/courses")
-    public List<Course> getAllCourses(@PathVariable String id) {
-        return courseService.getAllCourses(id);
+    public CourseController(CourseService courseService) {
+        this.courseService = courseService;
     }
 
-    @RequestMapping("/topics/{Tid}/courses/{Cid}")// just put same var name -> no need to ("course") extra help
-    public Course getcourse(@PathVariable("Cid") String id) {
-        return courseService.getCourse(id);
+    @GetMapping("/{topicId}/courses")
+    public List<Course> getAllCourses(@PathVariable String topicId) {
+        return courseService.getAllCourses(topicId);
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/topics/{Tid}/courses") // default is Get
-    public void addCourse(@RequestBody Course course,@PathVariable String Tid) {
-        course.setTopic(new Topic(Tid,"",""));
+    @GetMapping("/{topicId}/courses/{courseId}")
+    public Course getCourse(@PathVariable String courseId) {
+        return courseService.getCourse(courseId);
+    }
+
+    @PostMapping("/{topicId}/courses")
+    public void addCourse(@RequestBody Course course, @PathVariable String topicId) {
+        course.setTopic(new Topic(topicId, "", ""));
         courseService.addCourse(course);
     }
 
-    @RequestMapping(method = RequestMethod.PUT, value = "/topics/{tid}/courses/{cid}")
-    public void updateCourse(@RequestBody Course course, @PathVariable String tid, @PathVariable String cid) {
-        course.setTopic(new Topic(tid,"",""));
+    @PutMapping("/{topicId}/courses/{courseId}")
+    public void updateCourse(@RequestBody Course course, @PathVariable String topicId) {
+        course.setTopic(new Topic(topicId, "", ""));
         courseService.updateCourse(course);
-
     }
 
-    @RequestMapping(method = RequestMethod.DELETE, value = "/topics/{tid}/courses/{cid}")
-    public void removeCourse(@PathVariable String cid) {
-        courseService.removeCourse(cid);
+    @DeleteMapping("/{topicId}/courses/{courseId}")
+    public void removeCourse(@PathVariable String courseId) {
+        courseService.removeCourse(courseId);
     }
-
 }

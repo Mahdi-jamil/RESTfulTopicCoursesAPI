@@ -6,33 +6,38 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/topics")
 public class TopicController {
-    @Autowired
-    private TopicService topicService;
 
-    @RequestMapping("/topics")
+    private final TopicService topicService;
+
+    @Autowired
+    public TopicController(TopicService topicService) {
+        this.topicService = topicService;
+    }
+
+    @GetMapping
     public List<Topic> getAllTopics() {
         return topicService.getAllTopics();
     }
 
-    @RequestMapping("/topics/{topic}")// just put same var name -> no need to ("topic") extra help
-    public Topic getTopic(@PathVariable("topic") String id) {
+    @GetMapping("/{id}")
+    public Topic getTopic(@PathVariable String id) {
         return topicService.getTopic(id);
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/topics") // default is Get
+    @PostMapping
     public void addTopic(@RequestBody Topic topic) {
         topicService.addTopic(topic);
     }
 
-    @RequestMapping(method = RequestMethod.PUT, value = "/topics/{id}")
+    @PutMapping("/{id}")
     public void updateTopic(@RequestBody Topic topic, @PathVariable String id) {
         topicService.updateTopic(topic, id);
     }
 
-    @RequestMapping(method = RequestMethod.DELETE, value = "/topics/{id}")
+    @DeleteMapping("/{id}")
     public void removeTopic(@PathVariable String id) {
         topicService.removeTopic(id);
     }
-
 }
