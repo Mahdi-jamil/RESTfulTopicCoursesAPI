@@ -1,5 +1,7 @@
 package com.devesta.curricula.exception;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -10,7 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @ControllerAdvice
-public class GlobalExceptionHandler {
+public class ValidationExceptionHandler {
+    Logger logger = LoggerFactory.getLogger(ValidationExceptionHandler.class);
+
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
@@ -26,7 +30,7 @@ public class GlobalExceptionHandler {
         );
 
         if(!errors.isEmpty())
-            System.out.println("Validation errors: " + errors);
+            logger.error("Validation errors: " + errors);
         return ResponseEntity.badRequest().body(errors);
     }
 }

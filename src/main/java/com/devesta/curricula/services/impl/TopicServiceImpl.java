@@ -1,11 +1,8 @@
 package com.devesta.curricula.services.impl;
 
-import com.devesta.curricula.domain.dao.TopicDao;
 import com.devesta.curricula.domain.entities.Topic;
 import com.devesta.curricula.repositories.TopicRepository;
 import com.devesta.curricula.services.TopicService;
-import jakarta.validation.ConstraintViolation;
-import jakarta.validation.Validator;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -13,12 +10,10 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 @Service
 public class TopicServiceImpl implements TopicService {
     private final TopicRepository topicRepository;
-
 
     public TopicServiceImpl(TopicRepository topicRepository) {
         this.topicRepository = topicRepository;

@@ -1,5 +1,6 @@
 package com.devesta.curricula.domain.dao;
 
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -20,6 +21,7 @@ public class CourseDao {
     @NotBlank(message = "Description cannot be blank")
     private String description;
 
+    @Valid
     @NotNull(message = "Topic cannot be null")
     private TopicDao topic;
 

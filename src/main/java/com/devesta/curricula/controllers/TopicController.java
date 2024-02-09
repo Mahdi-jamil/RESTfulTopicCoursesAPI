@@ -5,15 +5,11 @@ import com.devesta.curricula.domain.entities.Topic;
 import com.devesta.curricula.mappers.Mapper;
 import com.devesta.curricula.services.TopicService;
 import jakarta.validation.Valid;
-import jakarta.validation.Validator;
-import org.springframework.beans.PropertyValues;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.DataBinder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -55,6 +51,7 @@ public class TopicController {
         Page<Topic> allTopics = topicService.getAllTopics(pageable);
         return allTopics.map(mapper::mapTo);
     }
+
 
     @PutMapping("/{id}")
     public ResponseEntity<TopicDao> updateTopic(@RequestBody @Valid TopicDao topicDao, @PathVariable Long id) {
