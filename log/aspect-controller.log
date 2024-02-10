@@ -64,3 +64,23 @@
 18:30:44.183 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic with id: 1 requested
 18:30:44.204 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic found and returned with status code 200 OK
 18:30:44.205 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=java, description=language)
+22:27:34.078 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - Adding new course: CourseDao(id=1, name=OOP, description=Design, topic=TopicDao(id=1, name=java, description=language)) for topic with id: 1
+22:27:34.191 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - New course added successfully with status code 201 CREATED
+22:27:34.193 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - CourseDao returned: CourseDao(id=1, name=OOP, description=Design, topic=TopicDao(id=1, name=java, description=language))
+22:27:59.910 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - Adding new course: CourseDao(id=1, name=OOP, description=Design, topic=TopicDao(id=1, name=java, description=language)) for topic with id: 1
+22:27:59.952 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - New course added successfully with status code 201 CREATED
+22:27:59.956 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - CourseDao returned: CourseDao(id=1, name=OOP, description=Design, topic=TopicDao(id=1, name=java, description=language))
+22:28:15.250 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic with id: 1 requested
+22:28:15.263 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic found and returned with status code 200 OK
+22:28:15.263 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=java, description=language)
+22:28:21.721 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Adding new topic: TopicDao(id=123, name=java, description=language)
+22:28:21.762 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - New topic added successfully with status code 201 CREATED
+22:28:21.763 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=java, description=language)
+22:28:24.310 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Adding new topic: TopicDao(id=123, name=java, description=language)
+22:28:24.348 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - New topic added successfully with status code 201 CREATED
+22:28:24.348 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=java, description=language)
+22:28:28.023 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic with id: 99999 requested
+22:28:28.041 [main] WARN  c.d.c.a.TopicLoggingInterceptionAspect - GetTopic Return: 404 NOT_FOUND
+22:28:33.200 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic with id: 1 requested
+22:28:33.219 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic found and returned with status code 200 OK
+22:28:33.219 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=java, description=language)

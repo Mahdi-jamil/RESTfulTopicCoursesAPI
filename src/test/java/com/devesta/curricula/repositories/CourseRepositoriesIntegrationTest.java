@@ -3,13 +3,11 @@ package com.devesta.curricula.repositories;
 import com.devesta.curricula.DataTestUtil;
 import com.devesta.curricula.domain.entities.Course;
 import com.devesta.curricula.domain.entities.Topic;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.EmbeddedDatabaseConnection;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.Optional;
@@ -50,8 +48,8 @@ public class CourseRepositoriesIntegrationTest {
         underTest.save(course);
         Optional<Course> result = underTest.findById(course.getId());
 
-        Assertions.assertThat(result).isPresent();
-        Assertions.assertThat(result.get()).isEqualTo(course);
+        assertThat(result).isPresent();
+        assertThat(result.get()).isEqualTo(course);
     }
 
     @Test
@@ -63,7 +61,7 @@ public class CourseRepositoriesIntegrationTest {
         underTest.delete(course);
 
         Optional<Course> result = underTest.findById(course.getId());
-        Assertions.assertThat(result).isEmpty();
+        assertThat(result).isEmpty();
     }
 
     @Test
@@ -74,7 +72,7 @@ public class CourseRepositoriesIntegrationTest {
         underTest.save(course);
         Course courseByIdAndTopicId = underTest.findByIdAndTopicId(course.getId(), topic.getId());
 
-        Assertions.assertThat(courseByIdAndTopicId).isNotNull();
-        Assertions.assertThat(courseByIdAndTopicId).isEqualTo(course);
+        assertThat(courseByIdAndTopicId).isNotNull();
+        assertThat(courseByIdAndTopicId).isEqualTo(course);
     }
 }

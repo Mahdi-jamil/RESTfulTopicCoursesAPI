@@ -4,17 +4,14 @@ import com.devesta.curricula.DataTestUtil;
 import com.devesta.curricula.domain.entities.Topic;
 import com.devesta.curricula.repositories.TopicRepository;
 import com.devesta.curricula.services.impl.TopicServiceImpl;
-import org.assertj.core.api.Assertions;
+import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.jdbc.EmbeddedDatabaseConnection;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
-import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.Optional;
 import static org.mockito.Mockito.*;
@@ -44,7 +41,7 @@ public class TopicServiceImplTest {
 
         Topic actualTopic = underTest.getTopic(topicId);
 
-        Assertions.assertThat(actualTopic).isEqualTo(expectedTopic);
+        assertThat(actualTopic).isEqualTo(expectedTopic);
         verify(topicRepository, times(1)).findById(topicId);
 
     }
@@ -56,7 +53,7 @@ public class TopicServiceImplTest {
 
         Topic result = underTest.addTopic(topic);
 
-        Assertions.assertThat(topic).isEqualTo(result);
+        assertThat(topic).isEqualTo(result);
     }
 
     @Test
@@ -67,7 +64,7 @@ public class TopicServiceImplTest {
 
         Topic result = underTest.updateTopic(topic, id);
 
-        Assertions.assertThat(topic).isEqualTo(result);
+        assertThat(topic).isEqualTo(result);
     }
 
     @Test

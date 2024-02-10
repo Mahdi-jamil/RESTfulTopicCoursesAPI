@@ -5,7 +5,7 @@ import com.devesta.curricula.domain.entities.Course;
 import com.devesta.curricula.domain.entities.Topic;
 import com.devesta.curricula.repositories.CourseRepository;
 import com.devesta.curricula.services.impl.CourseServiceImpl;
-import org.assertj.core.api.Assertions;
+import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -42,8 +42,8 @@ public class CourseServiceImplTest {
 
         Course getCourse = underTest.getCourse(course.getId(), topic.getId());
 
-        Assertions.assertThat(getCourse).isNotNull();
-        Assertions.assertThat(getCourse).isEqualTo(course);
+        assertThat(getCourse).isNotNull();
+        assertThat(getCourse).isEqualTo(course);
     }
 
     @Test
@@ -55,8 +55,8 @@ public class CourseServiceImplTest {
 
         Course addedCourse = underTest.addCourse(course, topic.getId());
 
-        Assertions.assertThat(addedCourse).isNotNull();
-        Assertions.assertThat(addedCourse).isEqualTo(course);
+        assertThat(addedCourse).isNotNull();
+        assertThat(addedCourse).isEqualTo(course);
         verify(courseRepository, times(1)).save(any(Course.class));
     }
 
@@ -73,10 +73,10 @@ public class CourseServiceImplTest {
 
         Course result = underTest.updateCourse(updatedCourse, topic.getId());
 
-        Assertions.assertThat(result).isNotNull();
-        Assertions.assertThat(result.getName()).isEqualTo("updatedName");
+        assertThat(result).isNotNull();
+        assertThat(result.getName()).isEqualTo("updatedName");
 
-        Assertions.assertThat(result)
+        assertThat(result)
                 .usingRecursiveComparison()
                 .ignoringFields("name") // ignore the 'name' field for comparison
                 .isEqualTo(originalCourse);

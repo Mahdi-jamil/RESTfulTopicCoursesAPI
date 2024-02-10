@@ -2034,3 +2034,678 @@
 19:38:07.478 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
 19:38:11.134 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - Started CourseRepositoriesIntegrationTest in 26.508 seconds (process running for 34.478)
 19:38:15.244 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:56:39.643 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.devesta.curricula.controllers.TopicControllerIntegrationTests]: TopicControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:56:41.149 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.devesta.curricula.CurriculumServiceApplication for test class com.devesta.curricula.controllers.TopicControllerIntegrationTests
+21:56:42.864 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+21:56:44.249 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+21:56:44.764 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 7636 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+21:56:44.767 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+21:56:52.546 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21:56:52.811 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 215 ms. Found 2 JPA repository interfaces.
+21:56:57.304 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:56:58.493 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+21:56:58.500 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:56:58.852 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+21:56:59.444 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+21:56:59.885 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+21:57:01.947 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+21:57:08.212 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21:57:08.419 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:57:16.019 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21:57:27.027 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+21:57:27.031 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+21:57:27.085 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+21:57:27.166 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 132 ms
+21:57:27.761 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 44.952 seconds (process running for 60.855)
+21:57:35.658 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:57:35.690 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:57:35.789 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+21:59:48.600 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.devesta.curricula.controllers.TopicControllerIntegrationTests]: TopicControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:59:49.121 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.devesta.curricula.CurriculumServiceApplication for test class com.devesta.curricula.controllers.TopicControllerIntegrationTests
+21:59:49.691 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+21:59:50.729 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+21:59:50.920 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 8404 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+21:59:50.924 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+21:59:56.731 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21:59:56.973 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 216 ms. Found 2 JPA repository interfaces.
+22:00:01.365 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:00:02.793 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+22:00:02.801 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:00:03.033 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:00:03.273 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22:00:03.392 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:00:04.552 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:00:08.371 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:00:08.491 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:00:15.427 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:00:25.106 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:00:25.109 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:00:25.161 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:00:25.233 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 120 ms
+22:00:25.593 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 35.939 seconds (process running for 40.657)
+22:00:28.888 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:00:28.907 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:00:28.916 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:02:43.379 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.devesta.curricula.controllers.TopicControllerIntegrationTests]: TopicControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:02:44.079 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.devesta.curricula.CurriculumServiceApplication for test class com.devesta.curricula.controllers.TopicControllerIntegrationTests
+22:02:44.660 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:02:45.577 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:02:45.833 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 16084 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:02:45.837 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:02:51.354 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:02:51.600 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 223 ms. Found 2 JPA repository interfaces.
+22:02:56.938 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:02:58.065 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+22:02:58.070 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:02:58.221 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:02:58.476 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22:02:58.638 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:02:59.680 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:03:04.330 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:03:04.461 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:03:09.528 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:03:17.534 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:03:17.537 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:03:17.595 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:03:18.990 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1443 ms
+22:03:19.312 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 34.705 seconds (process running for 39.564)
+22:03:28.340 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:03:28.406 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:03:28.623 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:07:23.076 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.devesta.curricula.controllers.TopicControllerIntegrationTests]: TopicControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:07:23.957 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.devesta.curricula.CurriculumServiceApplication for test class com.devesta.curricula.controllers.TopicControllerIntegrationTests
+22:07:24.701 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:07:26.131 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:07:26.141 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 1616 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:07:26.143 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:07:34.052 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:07:34.425 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 344 ms. Found 2 JPA repository interfaces.
+22:07:39.313 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:07:40.370 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+22:07:40.375 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:07:40.721 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:07:41.434 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22:07:41.753 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:07:42.979 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:07:47.256 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:07:47.391 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:07:54.279 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:08:05.076 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:08:05.080 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:08:05.208 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:08:05.453 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 362 ms
+22:08:05.999 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 41.402 seconds (process running for 47.589)
+22:08:12.497 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:08:12.515 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:08:12.566 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:26:07.799 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.devesta.curricula.repositories.TopicRepositoriesIntegrationTests]: TopicRepositoriesIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:26:08.452 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.devesta.curricula.CurriculumServiceApplication for test class com.devesta.curricula.repositories.TopicRepositoriesIntegrationTests
+22:26:08.850 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:26:10.413 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:26:10.537 [main] INFO  c.d.c.r.TopicRepositoriesIntegrationTests - Starting TopicRepositoriesIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:26:10.539 [main] INFO  c.d.c.r.TopicRepositoriesIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:26:14.188 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:26:14.595 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 369 ms. Found 2 JPA repository interfaces.
+22:26:15.007 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+22:26:16.204 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:340ffcba-d75e-4b10-8f7d-a3a70a4d6d92;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+22:26:17.658 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:26:18.368 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22:26:18.488 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:26:19.923 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:26:23.988 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:26:24.196 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:26:26.984 [main] INFO  c.d.c.r.TopicRepositoriesIntegrationTests - Started TopicRepositoriesIntegrationTests in 18.113 seconds (process running for 24.817)
+22:26:29.910 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:26:29.984 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:26:30.439 [main] INFO  c.d.c.r.TopicRepositoriesIntegrationTests - Starting TopicRepositoriesIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:26:30.440 [main] INFO  c.d.c.r.TopicRepositoriesIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:26:31.156 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:26:31.304 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 144 ms. Found 2 JPA repository interfaces.
+22:26:31.374 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+22:26:31.472 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:ace1597d-8239-4e3c-9112-d28d8ebb680f;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+22:26:31.677 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:26:31.686 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:26:31.701 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:26:32.080 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:26:32.125 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:26:32.641 [main] INFO  c.d.c.r.TopicRepositoriesIntegrationTests - Started TopicRepositoriesIntegrationTests in 2.657 seconds (process running for 30.474)
+22:26:32.737 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:26:32.821 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:26:33.149 [main] INFO  c.d.c.r.TopicRepositoriesIntegrationTests - Starting TopicRepositoriesIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:26:33.151 [main] INFO  c.d.c.r.TopicRepositoriesIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:26:33.805 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:26:33.883 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+22:26:33.977 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+22:26:34.106 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:2dbdd1c9-ae5e-4d81-9819-5b1e03983306;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+22:26:34.319 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:26:34.331 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:26:34.382 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:26:35.677 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:26:35.710 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:26:36.133 [main] INFO  c.d.c.r.TopicRepositoriesIntegrationTests - Started TopicRepositoriesIntegrationTests in 3.312 seconds (process running for 33.965)
+22:26:36.837 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:26:36.965 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.devesta.curricula.controllers.CourseControllerIntegrationTests]: CourseControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:26:37.102 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.devesta.curricula.CurriculumServiceApplication for test class com.devesta.curricula.controllers.CourseControllerIntegrationTests
+22:26:37.179 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:26:37.450 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Starting CourseControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:26:37.452 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:26:41.276 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:26:41.364 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+22:26:43.954 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:26:44.061 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn24: url=jdbc:h2:mem:testdb user=SA
+22:26:44.066 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:26:44.133 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:26:44.144 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:26:44.307 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:26:44.557 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:26:44.574 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:26:48.594 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:26:58.331 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:26:58.333 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:26:58.424 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:26:58.521 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 185 ms
+22:26:59.595 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Started CourseControllerIntegrationTests in 22.416 seconds (process running for 57.427)
+22:27:01.977 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:27:02.063 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:27:02.166 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:27:02.258 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:27:02.561 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Starting CourseControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:27:02.562 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:27:04.462 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:27:04.555 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+22:27:05.427 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+22:27:05.436 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn34: url=jdbc:h2:mem:testdb user=SA
+22:27:05.436 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+22:27:05.439 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:27:05.450 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:27:05.530 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:27:05.913 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:27:05.926 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:27:08.253 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:27:11.021 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:27:11.022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:27:11.047 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:27:11.118 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 92 ms
+22:27:11.275 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Started CourseControllerIntegrationTests in 9.017 seconds (process running for 69.107)
+22:27:13.693 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:27:13.714 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+22:27:13.725 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+22:27:13.734 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:27:14.053 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Starting CourseControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:27:14.056 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:27:15.640 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:27:15.697 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+22:27:16.677 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+22:27:16.685 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn44: url=jdbc:h2:mem:testdb user=SA
+22:27:16.686 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+22:27:16.689 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:27:16.699 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:27:16.715 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:27:17.033 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:27:17.071 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:27:18.175 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:27:20.492 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:27:20.493 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:27:20.979 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:27:21.083 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 590 ms
+22:27:21.183 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Started CourseControllerIntegrationTests in 7.436 seconds (process running for 79.016)
+22:27:21.342 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:27:21.349 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+22:27:21.357 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+22:27:21.366 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:27:21.642 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Starting CourseControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:27:21.643 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:27:23.143 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:27:23.173 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+22:27:23.530 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+22:27:23.814 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn54: url=jdbc:h2:mem:testdb user=SA
+22:27:23.815 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+22:27:23.818 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:27:23.828 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:27:23.841 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:27:24.153 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:27:24.174 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:27:25.314 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:27:27.241 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:27:27.242 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:27:27.254 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:27:27.312 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 70 ms
+22:27:27.370 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Started CourseControllerIntegrationTests in 6.004 seconds (process running for 85.203)
+22:27:27.780 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:27:27.788 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+22:27:27.887 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+22:27:27.894 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:27:28.095 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Starting CourseControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:27:28.096 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:27:29.184 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:27:29.212 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+22:27:30.160 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+22:27:30.180 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection conn64: url=jdbc:h2:mem:testdb user=SA
+22:27:30.181 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+22:27:30.183 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:27:30.195 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:27:30.209 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:27:30.466 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:27:30.494 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:27:31.281 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:27:33.484 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:27:33.484 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:27:33.508 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:27:33.545 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 61 ms
+22:27:33.598 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Started CourseControllerIntegrationTests in 5.704 seconds (process running for 91.43)
+22:27:34.078 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - Adding new course: CourseDao(id=1, name=OOP, description=Design, topic=TopicDao(id=1, name=java, description=language)) for topic with id: 1
+22:27:34.191 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - New course added successfully with status code 201 CREATED
+22:27:34.193 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - CourseDao returned: CourseDao(id=1, name=OOP, description=Design, topic=TopicDao(id=1, name=java, description=language))
+22:27:34.312 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:27:34.330 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+22:27:34.336 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+22:27:34.345 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:27:34.549 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Starting CourseControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:27:34.549 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:27:36.419 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:27:36.449 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+22:27:36.893 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+22:27:36.913 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection conn74: url=jdbc:h2:mem:testdb user=SA
+22:27:36.914 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+22:27:37.335 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:27:37.348 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:27:37.359 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:27:37.654 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:27:37.676 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:27:38.603 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:27:40.181 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:27:40.182 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:27:40.201 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:27:40.227 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 44 ms
+22:27:40.318 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Started CourseControllerIntegrationTests in 5.972 seconds (process running for 98.149)
+22:27:40.461 [main] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [name: Name cannot be blank]
+22:27:40.490 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:27:40.504 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+22:27:40.527 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+22:27:40.538 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:27:40.710 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Starting CourseControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:27:40.711 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:27:42.568 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:27:42.602 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+22:27:43.043 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+22:27:43.059 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection conn84: url=jdbc:h2:mem:testdb user=SA
+22:27:43.060 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+22:27:43.063 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:27:43.083 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:27:43.094 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:27:43.502 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:27:43.565 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:27:44.660 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:27:46.850 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:27:46.850 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:27:46.864 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:27:46.924 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 73 ms
+22:27:47.027 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Started CourseControllerIntegrationTests in 6.49 seconds (process running for 104.86)
+22:27:47.560 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:27:47.607 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+22:27:47.747 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+22:27:47.753 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:27:47.859 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Starting CourseControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:27:47.861 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:27:49.538 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:27:49.579 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+22:27:50.182 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+22:27:50.189 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection conn94: url=jdbc:h2:mem:testdb user=SA
+22:27:50.190 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+22:27:50.193 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:27:50.206 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:27:50.221 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:27:50.726 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:27:50.742 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:27:53.807 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:27:55.770 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:27:55.771 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:27:55.783 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:27:55.812 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 41 ms
+22:27:55.855 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Started CourseControllerIntegrationTests in 8.101 seconds (process running for 113.687)
+22:27:55.890 [main] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [topic: Topic cannot be null]
+22:27:55.900 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:27:55.904 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+22:27:55.907 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+22:27:55.931 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:27:56.062 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Starting CourseControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:27:56.063 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:27:56.623 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:27:56.655 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+22:27:57.057 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+22:27:57.069 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-9 - Added connection conn104: url=jdbc:h2:mem:testdb user=SA
+22:27:57.069 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+22:27:57.072 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:27:57.109 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:27:57.126 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:27:57.255 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:27:57.271 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:27:57.925 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:27:59.782 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:27:59.783 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:27:59.795 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:27:59.815 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 32 ms
+22:27:59.857 [main] INFO  c.d.c.c.CourseControllerIntegrationTests - Started CourseControllerIntegrationTests in 3.926 seconds (process running for 117.689)
+22:27:59.910 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - Adding new course: CourseDao(id=1, name=OOP, description=Design, topic=TopicDao(id=1, name=java, description=language)) for topic with id: 1
+22:27:59.952 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - New course added successfully with status code 201 CREATED
+22:27:59.956 [main] INFO  c.d.c.a.CourseLoggingInterceptionAspect - CourseDao returned: CourseDao(id=1, name=OOP, description=Design, topic=TopicDao(id=1, name=java, description=language))
+22:27:59.981 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:27:59.985 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+22:27:59.987 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+22:28:00.354 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.devesta.curricula.controllers.TopicControllerIntegrationTests]: TopicControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:28:00.362 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.devesta.curricula.CurriculumServiceApplication for test class com.devesta.curricula.controllers.TopicControllerIntegrationTests
+22:28:00.374 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:00.677 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:00.678 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:28:01.488 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:01.517 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+22:28:01.795 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+22:28:01.800 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-10 - Added connection conn114: url=jdbc:h2:mem:testdb user=SA
+22:28:01.806 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+22:28:01.808 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:01.817 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:01.828 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:01.966 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:01.978 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:02.810 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:28:03.988 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:28:03.988 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:28:04.085 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:28:04.115 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 126 ms
+22:28:04.160 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 3.787 seconds (process running for 121.993)
+22:28:04.272 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:04.286 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+22:28:04.288 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+22:28:04.294 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:04.374 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:04.375 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:28:04.954 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:04.988 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+22:28:05.245 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+22:28:05.249 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-11 - Added connection conn124: url=jdbc:h2:mem:testdb user=SA
+22:28:05.250 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+22:28:05.252 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:05.260 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:05.271 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:05.379 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:05.388 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:05.917 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:28:07.053 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:28:07.053 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:28:07.065 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:28:07.082 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 29 ms
+22:28:07.129 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 2.836 seconds (process running for 124.961)
+22:28:07.265 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:07.268 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+22:28:07.273 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+22:28:07.284 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:08.071 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:08.072 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:28:08.877 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:08.905 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+22:28:09.157 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+22:28:09.161 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-12 - Added connection conn134: url=jdbc:h2:mem:testdb user=SA
+22:28:09.161 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+22:28:09.164 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:09.173 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:09.184 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:09.327 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:09.401 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:09.904 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:28:10.960 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:28:10.960 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:28:10.972 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:28:10.991 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 30 ms
+22:28:11.039 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 3.755 seconds (process running for 128.872)
+22:28:11.124 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:11.127 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+22:28:11.129 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
+22:28:11.136 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:11.301 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:11.302 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:28:11.914 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:11.947 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+22:28:12.233 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
+22:28:12.236 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-13 - Added connection conn144: url=jdbc:h2:mem:testdb user=SA
+22:28:12.236 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
+22:28:12.239 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:12.247 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:12.259 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:12.382 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:12.399 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:12.877 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:28:15.143 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:28:15.143 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:28:15.157 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:28:15.169 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 26 ms
+22:28:15.207 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 4.071 seconds (process running for 133.039)
+22:28:15.250 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic with id: 1 requested
+22:28:15.263 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic found and returned with status code 200 OK
+22:28:15.263 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=java, description=language)
+22:28:15.297 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:15.304 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown initiated...
+22:28:15.313 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown completed.
+22:28:15.321 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:15.413 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:15.414 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:28:15.987 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:16.029 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+22:28:16.263 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Starting...
+22:28:16.267 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-14 - Added connection conn154: url=jdbc:h2:mem:testdb user=SA
+22:28:16.267 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Start completed.
+22:28:16.269 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:16.278 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:16.290 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:16.387 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:16.394 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:16.866 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:28:17.852 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:28:17.853 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:28:17.865 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:28:17.882 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 29 ms
+22:28:17.927 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 2.605 seconds (process running for 135.76)
+22:28:18.062 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:18.065 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown initiated...
+22:28:18.068 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown completed.
+22:28:18.075 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:18.143 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:18.144 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:28:18.661 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:18.689 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+22:28:18.912 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Starting...
+22:28:18.914 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-15 - Added connection conn164: url=jdbc:h2:mem:testdb user=SA
+22:28:18.915 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Start completed.
+22:28:18.917 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:18.923 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:18.936 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:19.069 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:19.082 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:19.565 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:28:21.590 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:28:21.590 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:28:21.602 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:28:21.626 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 36 ms
+22:28:21.672 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 3.596 seconds (process running for 139.505)
+22:28:21.721 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Adding new topic: TopicDao(id=123, name=java, description=language)
+22:28:21.762 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - New topic added successfully with status code 201 CREATED
+22:28:21.763 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=java, description=language)
+22:28:21.795 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:21.803 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown initiated...
+22:28:21.808 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown completed.
+22:28:21.817 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:21.894 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:21.895 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:28:22.371 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:22.397 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+22:28:22.653 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Starting...
+22:28:22.655 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-16 - Added connection conn174: url=jdbc:h2:mem:testdb user=SA
+22:28:22.656 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Start completed.
+22:28:22.658 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:22.665 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:22.677 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:22.784 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:22.797 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:23.326 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:28:24.190 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:28:24.191 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:28:24.202 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:28:24.228 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 37 ms
+22:28:24.272 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 2.455 seconds (process running for 142.104)
+22:28:24.310 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Adding new topic: TopicDao(id=123, name=java, description=language)
+22:28:24.348 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - New topic added successfully with status code 201 CREATED
+22:28:24.348 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=java, description=language)
+22:28:24.370 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:24.373 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown initiated...
+22:28:24.377 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown completed.
+22:28:24.384 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:24.458 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:24.459 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:28:24.975 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:25.001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+22:28:25.245 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Starting...
+22:28:25.254 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-17 - Added connection conn184: url=jdbc:h2:mem:testdb user=SA
+22:28:25.254 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Start completed.
+22:28:25.257 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:25.265 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:25.281 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:25.389 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:25.422 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:25.890 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:28:27.906 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:28:27.908 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:28:27.922 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:28:27.955 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 47 ms
+22:28:28.000 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 3.616 seconds (process running for 145.833)
+22:28:28.023 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic with id: 99999 requested
+22:28:28.041 [main] WARN  c.d.c.a.TopicLoggingInterceptionAspect - GetTopic Return: 404 NOT_FOUND
+22:28:28.055 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:28.058 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown initiated...
+22:28:28.060 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown completed.
+22:28:28.068 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:28.172 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:28.173 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:28:28.606 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:28.632 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+22:28:28.858 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Starting...
+22:28:28.861 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-18 - Added connection conn194: url=jdbc:h2:mem:testdb user=SA
+22:28:28.861 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Start completed.
+22:28:28.863 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:28.870 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:28.880 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:28.969 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:28.978 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:29.474 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:28:30.443 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:28:30.444 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:28:30.457 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:28:30.476 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 32 ms
+22:28:30.519 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 2.452 seconds (process running for 148.352)
+22:28:30.612 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:30.615 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown initiated...
+22:28:30.617 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown completed.
+22:28:30.629 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:30.719 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:30.720 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:28:31.265 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:31.296 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+22:28:31.543 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Starting...
+22:28:31.559 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-19 - Added connection conn204: url=jdbc:h2:mem:testdb user=SA
+22:28:31.559 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Start completed.
+22:28:31.561 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:31.573 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:31.583 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:31.728 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:31.737 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:32.290 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:28:33.008 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:28:33.008 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:28:33.015 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:28:33.069 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 61 ms
+22:28:33.114 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 2.485 seconds (process running for 150.947)
+22:28:33.200 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic with id: 1 requested
+22:28:33.219 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic found and returned with status code 200 OK
+22:28:33.219 [main] INFO  c.d.c.a.TopicLoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=java, description=language)
+22:28:33.227 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:33.229 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown initiated...
+22:28:33.231 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown completed.
+22:28:33.238 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:33.311 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Starting TopicControllerIntegrationTests using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:33.312 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - No active profile set, falling back to 1 default profile: "default"
+22:28:33.764 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:33.787 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+22:28:34.073 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Starting...
+22:28:34.076 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-20 - Added connection conn214: url=jdbc:h2:mem:testdb user=SA
+22:28:34.077 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Start completed.
+22:28:34.079 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:34.088 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:34.095 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:34.210 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:34.226 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:35.822 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:28:36.692 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+22:28:36.692 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+22:28:36.700 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+22:28:36.711 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 18 ms
+22:28:36.746 [main] INFO  c.d.c.c.TopicControllerIntegrationTests - Started TopicControllerIntegrationTests in 3.507 seconds (process running for 154.579)
+22:28:36.791 [main] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [name: Name cannot be blank]
+22:28:36.800 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:36.807 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown initiated...
+22:28:36.819 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown completed.
+22:28:38.988 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.devesta.curricula.repositories.CourseRepositoriesIntegrationTest]: CourseRepositoriesIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:28:39.254 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.devesta.curricula.CurriculumServiceApplication for test class com.devesta.curricula.repositories.CourseRepositoriesIntegrationTest
+22:28:39.300 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:40.104 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - Starting CourseRepositoriesIntegrationTest using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:40.106 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+22:28:43.475 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:43.625 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 145 ms. Found 2 JPA repository interfaces.
+22:28:43.879 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+22:28:44.093 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:aafb63e8-2821-48d6-a914-f8667ccbc504;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+22:28:44.318 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:44.344 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:44.374 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:45.229 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:45.328 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:46.009 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - Started CourseRepositoriesIntegrationTest in 6.716 seconds (process running for 163.842)
+22:28:46.307 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:46.373 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:46.654 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - Starting CourseRepositoriesIntegrationTest using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:46.658 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+22:28:47.129 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:47.179 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+22:28:47.226 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+22:28:47.308 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:0502760e-9861-40a7-a483-fb336b604ef7;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+22:28:47.483 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:47.516 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:47.551 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:47.920 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:47.985 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:48.395 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - Started CourseRepositoriesIntegrationTest in 2.033 seconds (process running for 166.229)
+22:28:48.522 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:48.560 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:48.783 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - Starting CourseRepositoriesIntegrationTest using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:48.786 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+22:28:49.142 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:49.195 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+22:28:49.258 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+22:28:49.305 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:27fef6ca-b85d-4b3c-9aba-48e49c8340e1;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+22:28:49.421 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:49.432 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:49.445 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:49.720 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:49.797 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:50.025 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - Started CourseRepositoriesIntegrationTest in 1.464 seconds (process running for 167.857)
+22:28:50.165 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:28:50.231 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+22:28:50.377 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - Starting CourseRepositoriesIntegrationTest using Java 20.0.2 with PID 4064 (started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+22:28:50.378 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+22:28:50.659 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:28:50.704 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+22:28:50.753 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+22:28:50.788 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:f8c7d4d0-4fe1-4583-8482-8a78e15e0886;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+22:28:50.859 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:28:50.882 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:28:50.895 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:28:51.165 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:28:51.191 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:28:51.380 [main] INFO  c.d.c.r.CourseRepositoriesIntegrationTest - Started CourseRepositoriesIntegrationTest in 1.149 seconds (process running for 169.212)
+22:28:51.593 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

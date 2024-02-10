@@ -11,7 +11,6 @@ import com.devesta.curricula.services.TopicService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,7 +19,8 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
@@ -55,7 +55,7 @@ public class CourseControllerIntegrationTests {
                 MockMvcRequestBuilders.post("/topics/{topicId}/courses", topic.getId())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseJson)
-        ).andExpect(MockMvcResultMatchers.status().isCreated());
+        ).andExpect(status().isCreated());
     }
 
     @Test
@@ -70,11 +70,11 @@ public class CourseControllerIntegrationTests {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseJson)
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.id").isNumber()
+                jsonPath("$.id").isNumber()
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.name").value("OOP")
+                jsonPath("$.name").value("OOP")
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.description").value("Design")
+                jsonPath("$.description").value("Design")
         );
     }
 
@@ -84,7 +84,7 @@ public class CourseControllerIntegrationTests {
         mockMvc.perform(
                 MockMvcRequestBuilders.get("/topics/{topicId}/courses", topic.getId())
                         .contentType(MediaType.APPLICATION_JSON)
-        ).andExpect(MockMvcResultMatchers.status().isOk());
+        ).andExpect(status().isOk());
     }
 
     @Test
@@ -98,11 +98,11 @@ public class CourseControllerIntegrationTests {
                 MockMvcRequestBuilders.get("/topics/{topicId}/courses", topic.getId())
                         .contentType(MediaType.APPLICATION_JSON)
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.content[0].id").isNumber()
+                jsonPath("$.content[0].id").isNumber()
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.content[0].name").value("OOP")
+                jsonPath("$.content[0].name").value("OOP")
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.content[0].description").value("Design")
+                jsonPath("$.content[0].description").value("Design")
         );
     }
 
@@ -119,7 +119,7 @@ public class CourseControllerIntegrationTests {
                 MockMvcRequestBuilders.put("/topics/{topicId}/courses/{id}", topic.getId(), 99999)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseJson)
-        ).andExpect(MockMvcResultMatchers.status().isCreated());
+        ).andExpect(status().isCreated());
     }
 
     @Test
@@ -137,7 +137,7 @@ public class CourseControllerIntegrationTests {
                 MockMvcRequestBuilders.put("/topics/{topicId}/courses/{id}", topic.getId(), added.getId())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseJson)
-        ).andExpect(MockMvcResultMatchers.status().isOk());
+        ).andExpect(status().isOk());
     }
 
     @Test
@@ -157,11 +157,11 @@ public class CourseControllerIntegrationTests {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseJson)
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.id").value(courseDao.getId())
+                jsonPath("$.id").value(courseDao.getId())
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.name").value(courseDao.getName())
+                jsonPath("$.name").value(courseDao.getName())
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.description").value(courseDao.getDescription())
+                jsonPath("$.description").value(courseDao.getDescription())
         );
     }
 
@@ -185,7 +185,7 @@ public class CourseControllerIntegrationTests {
                 MockMvcRequestBuilders.post("/topics/1/courses")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseAsJson)
-        ).andExpect(MockMvcResultMatchers.status().isBadRequest());
+        ).andExpect(status().isBadRequest());
 
     }
 
@@ -204,7 +204,7 @@ public class CourseControllerIntegrationTests {
                 MockMvcRequestBuilders.post("/topics/1/courses")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseAsJson)
-        ).andExpect(MockMvcResultMatchers.status().isBadRequest());
+        ).andExpect(status().isBadRequest());
     }
 
 }

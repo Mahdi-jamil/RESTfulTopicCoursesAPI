@@ -3,7 +3,7 @@ package com.devesta.curricula;
 import com.devesta.curricula.domain.entities.Topic;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.assertj.core.api.Assertions;
+import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
 
 public class JacksonTests {
@@ -24,7 +24,7 @@ public class JacksonTests {
     public void testConvertFromObjectToJson() throws JsonProcessingException {
 
         String value = mapper.writeValueAsString(topic);
-        Assertions.assertThat(value).isEqualTo(topicAsJson);
+        assertThat(value).isEqualTo(topicAsJson);
 
     }
 
@@ -32,7 +32,7 @@ public class JacksonTests {
     public void testConvertFromJsonToJavaObject() throws JsonProcessingException {
 
         Topic result = mapper.readValue(topicAsJson, Topic.class);
-        Assertions.assertThat(result).isEqualTo(topic);
+        assertThat(result).isEqualTo(topic);
 
     }
 }

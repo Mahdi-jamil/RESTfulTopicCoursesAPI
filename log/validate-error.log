@@ -13,3 +13,6 @@
 18:25:26.334 [main] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [name: Name cannot be blank]
 18:25:40.872 [main] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [topic: Topic cannot be null]
 18:30:48.486 [main] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [name: Name cannot be blank]
+22:27:40.461 [main] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [name: Name cannot be blank]
+22:27:55.890 [main] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [topic: Topic cannot be null]
+22:28:36.791 [main] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [name: Name cannot be blank]

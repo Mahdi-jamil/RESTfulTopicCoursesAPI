@@ -15,7 +15,8 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 
 @SpringBootTest
@@ -44,7 +45,7 @@ public class TopicControllerIntegrationTests {
                 MockMvcRequestBuilders.post("/topics")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(topicJson)
-        ).andExpect(MockMvcResultMatchers.status().isCreated());
+        ).andExpect(status().isCreated());
     }
 
     @Test
@@ -57,11 +58,11 @@ public class TopicControllerIntegrationTests {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(topicJson)
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.id").isNumber()
+                jsonPath("$.id").isNumber()
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.name").value("java")
+                jsonPath("$.name").value("java")
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.description").value("language")
+                jsonPath("$.description").value("language")
         );
     }
 
@@ -70,7 +71,7 @@ public class TopicControllerIntegrationTests {
         mockMvc.perform(
                 MockMvcRequestBuilders.get("/topics")
                         .contentType(MediaType.APPLICATION_JSON)
-        ).andExpect(MockMvcResultMatchers.status().isOk());
+        ).andExpect(status().isOk());
     }
 
     @Test
@@ -83,11 +84,11 @@ public class TopicControllerIntegrationTests {
                 MockMvcRequestBuilders.get("/topics")
                         .contentType(MediaType.APPLICATION_JSON)
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.content[0].id").isNumber()
+                jsonPath("$.content[0].id").isNumber()
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.content[0].name").value("java")
+                jsonPath("$.content[0].name").value("java")
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.content[0].description").value("language")
+                jsonPath("$.content[0].description").value("language")
         );
     }
 
@@ -98,7 +99,7 @@ public class TopicControllerIntegrationTests {
         mockMvc.perform(
                 MockMvcRequestBuilders.get("/topics/{id}", added.getId())
                         .contentType(MediaType.APPLICATION_JSON)
-        ).andExpect(MockMvcResultMatchers.status().isOk());
+        ).andExpect(status().isOk());
     }
 
     @Test
@@ -106,7 +107,7 @@ public class TopicControllerIntegrationTests {
         mockMvc.perform(
                 MockMvcRequestBuilders.get("/topics/{id}", 99999)
                         .contentType(MediaType.APPLICATION_JSON)
-        ).andExpect(MockMvcResultMatchers.status().isNotFound());
+        ).andExpect(status().isNotFound());
     }
 
     @Test
@@ -118,11 +119,11 @@ public class TopicControllerIntegrationTests {
                 MockMvcRequestBuilders.get("/topics/{id}", added.getId())
                         .contentType(MediaType.APPLICATION_JSON)
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.id").isNumber()
+                jsonPath("$.id").isNumber()
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.name").value("java")
+                jsonPath("$.name").value("java")
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.description").value("language")
+                jsonPath("$.description").value("language")
         );
     }
 
@@ -135,7 +136,7 @@ public class TopicControllerIntegrationTests {
                 MockMvcRequestBuilders.put("/topics/{id}", 99999)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(topicJson)
-        ).andExpect(MockMvcResultMatchers.status().isNotFound());
+        ).andExpect(status().isNotFound());
     }
 
     @Test
@@ -150,7 +151,7 @@ public class TopicControllerIntegrationTests {
                 MockMvcRequestBuilders.put("/topics/{id}", added.getId())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(topicJson)
-        ).andExpect(MockMvcResultMatchers.status().isOk());
+        ).andExpect(status().isOk());
     }
 
     @Test
@@ -168,29 +169,25 @@ public class TopicControllerIntegrationTests {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(topicJson)
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.id").value(topicDao.getId())
+                jsonPath("$.id").value(topicDao.getId())
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.name").value(topicDao.getName())
+                jsonPath("$.name").value(topicDao.getName())
         ).andExpect(
-                MockMvcResultMatchers.jsonPath("$.description").value(topicDao.getDescription())
+                jsonPath("$.description").value(topicDao.getDescription())
         );
     }
 
     @Test
     public void testThatInvalidBodyReturnBadRequest() throws Exception {
-
         String topicAsJson = """
-                     {"id":123,"name":"","description":"programming language"}
-                     """;
-
+                {"id":123,"name":"","description":"programming language"}
+                """;
 
         mockMvc.perform(
                 MockMvcRequestBuilders.post("/topics")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(topicAsJson)
-        ).andExpect(MockMvcResultMatchers.status().isBadRequest());
+        ).andExpect(status().isBadRequest());
 
     }
-
-
 }

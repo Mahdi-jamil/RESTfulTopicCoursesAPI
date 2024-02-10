@@ -4,13 +4,11 @@ import com.devesta.curricula.DataTestUtil;
 import com.devesta.curricula.domain.entities.Topic;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.EmbeddedDatabaseConnection;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.Optional;
@@ -43,8 +41,8 @@ public class TopicRepositoriesIntegrationTests {
 
         underTest.save(topic);
         Optional<Topic> result = underTest.findById(topic.getId());
-        Assertions.assertThat(result).isPresent();
-        Assertions.assertThat(result.get()).isEqualTo(topic);
+        assertThat(result).isPresent();
+        assertThat(result.get()).isEqualTo(topic);
     }
 
     @Test
@@ -53,7 +51,7 @@ public class TopicRepositoriesIntegrationTests {
         underTest.save(topic);
         underTest.delete(topic);
         Optional<Topic> result = underTest.findById(topic.getId());
-        Assertions.assertThat(result).isEmpty();
+        assertThat(result).isEmpty();
     }
 
 
