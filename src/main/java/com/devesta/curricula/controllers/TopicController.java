@@ -40,7 +40,6 @@ public class TopicController {
 
     @PostMapping
     public ResponseEntity<TopicDao> addTopic(@RequestBody @Valid TopicDao topicDao) {
-
         Topic topic = mapper.mapFrom(topicDao);
         Topic savedTopic = topicService.addTopic(topic);
         return new ResponseEntity<>(mapper.mapTo(savedTopic), HttpStatus.CREATED);

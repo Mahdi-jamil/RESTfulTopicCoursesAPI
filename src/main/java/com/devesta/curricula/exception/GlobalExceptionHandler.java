@@ -12,15 +12,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 @ControllerAdvice
-public class ValidationExceptionHandler {
-    Logger logger = LoggerFactory.getLogger(ValidationExceptionHandler.class);
-
+public class GlobalExceptionHandler {
+    Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ResponseEntity<Object> handleValidationExceptions(MethodArgumentNotValidException ex) {
         BindingResult result = ex.getBindingResult();
         List<String> errors = new ArrayList<>();
+
 
         result.getFieldErrors().forEach((error) ->
             errors.add(error.getField() + ": " + error.getDefaultMessage())

@@ -1,91 +1,112 @@
-21:36:07.845 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Starting CurriculumServiceApplication using Java 20.0.2 with PID 10044 (C:\Users\dkmods\Intellji-Workspace\demo\target\classes started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
-21:36:07.905 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - The following 2 profiles are active: "dev", "admin"
-21:36:07.637 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-21:36:08.258 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-21:36:08.258 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-21:36:16.974 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-21:36:17.405 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 398 ms. Found 2 JPA repository interfaces.
-21:36:22.778 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-21:36:22.933 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-21:36:22.959 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-21:36:22.960 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
-21:36:24.036 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-21:36:24.041 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 15777 ms
-21:36:26.123 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-21:36:27.875 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-21:36:28.641 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-21:36:30.638 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-21:37:22.340 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-21:37:22.820 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Starting CurriculumServiceApplication using Java 20.0.2 with PID 1008 (C:\Users\dkmods\Intellji-Workspace\demo\target\classes started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
-21:37:22.850 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - The following 2 profiles are active: "dev", "admin"
-21:37:23.153 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-21:37:23.154 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-21:37:27.671 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-21:37:28.040 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 339 ms. Found 2 JPA repository interfaces.
-21:37:31.735 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-21:37:31.769 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-21:37:31.778 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-21:37:31.784 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
-21:37:32.068 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-21:37:32.084 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8919 ms
-21:37:32.765 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-21:37:32.963 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-21:37:33.761 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-21:37:34.709 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-21:37:44.822 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-21:37:45.505 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-21:37:48.951 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-21:37:51.079 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-21:37:51.178 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-21:37:51.308 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-21:37:51.371 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Started CurriculumServiceApplication in 30.314 seconds (process running for 33.008)
-21:41:09.268 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-21:41:26.909 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-21:41:26.975 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Starting CurriculumServiceApplication using Java 20.0.2 with PID 6700 (C:\Users\dkmods\Intellji-Workspace\demo\target\classes started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
-21:41:26.983 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - The following 2 profiles are active: "dev", "admin"
-21:41:27.369 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-21:41:27.370 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-21:41:33.036 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-21:41:33.379 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 315 ms. Found 2 JPA repository interfaces.
-21:41:37.812 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-21:41:37.882 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-21:41:37.891 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-21:41:37.893 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
-21:41:38.306 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-21:41:38.310 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10935 ms
-21:41:39.271 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-21:41:39.835 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-21:41:40.239 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-21:41:41.725 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-21:41:47.975 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-21:41:49.062 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-21:41:53.485 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-21:41:57.399 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-21:41:57.543 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-21:41:58.341 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-21:41:58.404 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Started CurriculumServiceApplication in 33.298 seconds (process running for 36.791)
-21:44:10.043 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-21:44:29.767 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-21:44:29.788 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Starting CurriculumServiceApplication using Java 20.0.2 with PID 15500 (C:\Users\dkmods\Intellji-Workspace\demo\target\classes started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
-21:44:29.840 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - The following 2 profiles are active: "dev", "admin"
-21:44:30.492 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-21:44:30.493 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-21:44:36.174 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-21:44:36.426 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 217 ms. Found 2 JPA repository interfaces.
-21:44:39.289 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-21:44:39.320 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-21:44:39.340 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-21:44:39.342 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
-21:44:39.700 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-21:44:39.706 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9208 ms
-21:44:40.639 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-21:44:40.970 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-21:44:41.474 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-21:44:43.005 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-21:44:48.533 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-21:44:49.613 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-21:44:52.714 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-21:44:54.046 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-21:44:54.103 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-21:44:54.162 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-21:44:54.285 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Started CurriculumServiceApplication in 27.073 seconds (process running for 32.189)
+13:47:08.356 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:47:08.456 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:47:08.464 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+13:47:08.817 [http-nio-8080-exec-1] INFO  c.d.c.a.LoggingInterceptionAspect - Topic with id: 1 requested
+13:47:09.917 [http-nio-8080-exec-1] INFO  c.d.c.a.LoggingInterceptionAspect - Topic found and returned with status code 200 OK
+13:47:09.919 [http-nio-8080-exec-1] INFO  c.d.c.a.LoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=pointer, description=Memory Management Effiectly)
+13:47:40.120 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13:49:53.598 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+13:49:53.800 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Starting CurriculumServiceApplication using Java 20.0.2 with PID 17312 (C:\Users\dkmods\Intellji-Workspace\demo\target\classes started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+13:49:53.812 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - The following 2 profiles are active: "dev", "admin"
+13:49:54.210 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:49:54.211 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:50:01.893 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:50:02.300 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 350 ms. Found 2 JPA repository interfaces.
+13:50:08.965 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+13:50:09.057 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+13:50:09.067 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:50:09.069 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+13:50:09.323 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:50:09.327 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 15112 ms
+13:50:12.281 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13:50:12.632 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13:50:13.203 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13:50:14.519 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13:50:20.585 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13:50:21.347 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:50:26.834 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:50:35.868 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+13:50:35.933 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+13:50:36.856 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+13:50:36.955 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+13:50:37.127 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Started CurriculumServiceApplication in 45.298 seconds (process running for 48.872)
+13:51:42.831 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:51:42.838 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:51:42.848 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+13:51:43.150 [http-nio-8080-exec-1] INFO  c.d.c.a.LoggingInterceptionAspect - Topic with id: 1 requested
+13:51:43.706 [http-nio-8080-exec-1] INFO  c.d.c.a.LoggingInterceptionAspect - Topic found and returned with status code 200 OK
+13:51:43.707 [http-nio-8080-exec-1] INFO  c.d.c.a.LoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=pointer, description=Memory Management Effiectly)
+14:01:36.610 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:02:28.345 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+14:02:28.605 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Starting CurriculumServiceApplication using Java 20.0.2 with PID 1552 (C:\Users\dkmods\Intellji-Workspace\demo\target\classes started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+14:02:28.619 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - The following 2 profiles are active: "dev", "admin"
+14:02:29.190 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:02:29.190 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:02:36.494 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:02:36.691 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 175 ms. Found 2 JPA repository interfaces.
+14:02:44.668 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14:02:44.707 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:02:44.736 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:02:44.738 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+14:02:44.993 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:02:45.005 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 15802 ms
+14:02:47.027 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:02:47.272 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14:02:47.384 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14:02:48.209 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:02:53.958 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:02:56.064 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:03:05.607 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:03:17.086 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:03:17.800 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+14:03:19.299 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:03:19.429 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14:03:19.592 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Started CurriculumServiceApplication in 53.02 seconds (process running for 56.449)
+14:07:21.725 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:07:21.727 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:07:21.738 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+14:07:23.109 [http-nio-8080-exec-2] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic with id: 1 requested
+14:07:31.318 [http-nio-8080-exec-2] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic found and returned with status code 200 OK
+14:07:31.457 [http-nio-8080-exec-2] INFO  c.d.c.a.TopicLoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=pointer, description=Memory Management Effiectly)
+14:09:54.399 [http-nio-8080-exec-4] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Course with id: 1 requested for topic with id: 1
+14:09:55.566 [http-nio-8080-exec-4] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Course found and returned with status code 200 OK
+14:09:55.566 [http-nio-8080-exec-4] INFO  c.d.c.a.TopicLoggingInterceptionAspect - CourseDao returned: CourseDao(id=1, name=Imperative, description=pointer,struct,recursion,files,linked list, topic=TopicDao(id=1, name=pointer, description=Memory Management Effiectly))
+14:11:47.740 [http-nio-8080-exec-6] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [name: Name cannot be blank]
+14:11:48.373 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.devesta.curricula.domain.dao.TopicDao> com.devesta.curricula.controllers.TopicController.addTopic(com.devesta.curricula.domain.dao.TopicDao): [Field error in object 'topicDao' on field 'name': rejected value []; codes [NotBlank.topicDao.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [topicDao.name,name]; arguments []; default message [name]]; default message [Name cannot be blank]] ]
+14:13:35.461 [http-nio-8080-exec-9] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Adding new course: CourseDao(id=1, name=Imperative, description=pointer,struct,recursion,files,linked list, topic=TopicDao(id=1, name=pointer, description=Memory Management Effiectly)) for topic with id: 1
+14:13:36.182 [http-nio-8080-exec-9] INFO  c.d.c.a.TopicLoggingInterceptionAspect - New course added successfully with status code 201 CREATED
+14:13:36.183 [http-nio-8080-exec-9] INFO  c.d.c.a.TopicLoggingInterceptionAspect - CourseDao returned: CourseDao(id=1, name=Imperative, description=pointer,struct,recursion,files,linked list, topic=TopicDao(id=1, name=pointer, description=Memory Management Effiectly))
+14:14:07.105 [http-nio-8080-exec-1] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Adding new course: CourseDao(id=1, name=Imperative, description=pointer,struct,recursion,files,linked list, topic=TopicDao(id=1, name=pointer, description=Memory Management Effiectly)) for topic with id: 1
+14:14:07.263 [http-nio-8080-exec-1] INFO  c.d.c.a.TopicLoggingInterceptionAspect - New course added successfully with status code 201 CREATED
+14:14:07.263 [http-nio-8080-exec-1] INFO  c.d.c.a.TopicLoggingInterceptionAspect - CourseDao returned: CourseDao(id=1, name=Imperative, description=pointer,struct,recursion,files,linked list, topic=TopicDao(id=1, name=pointer, description=Memory Management Effiectly))
+14:14:09.743 [http-nio-8080-exec-2] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Adding new course: CourseDao(id=1, name=Imperative, description=pointer,struct,recursion,files,linked list, topic=TopicDao(id=1, name=pointer, description=Memory Management Effiectly)) for topic with id: 1
+14:14:09.962 [http-nio-8080-exec-2] INFO  c.d.c.a.TopicLoggingInterceptionAspect - New course added successfully with status code 201 CREATED
+14:14:09.962 [http-nio-8080-exec-2] INFO  c.d.c.a.TopicLoggingInterceptionAspect - CourseDao returned: CourseDao(id=1, name=Imperative, description=pointer,struct,recursion,files,linked list, topic=TopicDao(id=1, name=pointer, description=Memory Management Effiectly))
+14:26:52.267 [http-nio-8080-exec-4] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [name: Name cannot be blank]
+14:26:52.331 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.devesta.curricula.domain.dao.CourseDao> com.devesta.curricula.controllers.CourseController.addCourse(com.devesta.curricula.domain.dao.CourseDao,java.lang.Long): [Field error in object 'courseDao' on field 'name': rejected value []; codes [NotBlank.courseDao.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [courseDao.name,name]; arguments []; default message [name]]; default message [Name cannot be blank]] ]
+14:27:20.601 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:28:43.318 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+14:28:43.658 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Starting CurriculumServiceApplication using Java 20.0.2 with PID 6572 (C:\Users\dkmods\Intellji-Workspace\demo\target\classes started by dkmods in C:\Users\dkmods\Intellji-Workspace\demo)
+14:28:43.686 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - The following 2 profiles are active: "dev", "admin"
+14:28:44.175 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:28:44.178 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:28:52.598 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:28:52.901 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 271 ms. Found 2 JPA repository interfaces.
+14:29:07.765 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14:29:08.362 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:29:08.392 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:29:08.393 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+14:29:10.742 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:29:10.745 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 26562 ms
+14:29:18.070 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:29:19.481 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14:29:20.306 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14:29:24.290 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:29:50.941 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:30:01.214 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:30:11.564 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:30:25.793 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:30:25.876 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+14:30:26.956 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:30:27.591 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14:30:27.699 [restartedMain] INFO  c.d.c.CurriculumServiceApplication - Started CurriculumServiceApplication in 106.941 seconds (process running for 113.714)

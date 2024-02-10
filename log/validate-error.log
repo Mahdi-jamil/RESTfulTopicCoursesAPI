@@ -1,0 +1,2 @@
+14:11:47.740 [http-nio-8080-exec-6] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [name: Name cannot be blank]
+14:26:52.267 [http-nio-8080-exec-4] ERROR c.d.c.e.GlobalExceptionHandler - Validation errors: [name: Name cannot be blank]

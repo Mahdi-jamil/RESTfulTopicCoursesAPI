@@ -1,0 +1,6 @@
+13:51:43.150 [http-nio-8080-exec-1] INFO  c.d.c.a.LoggingInterceptionAspect - Topic with id: 1 requested
+13:51:43.706 [http-nio-8080-exec-1] INFO  c.d.c.a.LoggingInterceptionAspect - Topic found and returned with status code 200 OK
+13:51:43.707 [http-nio-8080-exec-1] INFO  c.d.c.a.LoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=pointer, description=Memory Management Effiectly)
+14:07:23.109 [http-nio-8080-exec-2] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic with id: 1 requested
+14:07:31.318 [http-nio-8080-exec-2] INFO  c.d.c.a.TopicLoggingInterceptionAspect - Topic found and returned with status code 200 OK
+14:07:31.457 [http-nio-8080-exec-2] INFO  c.d.c.a.TopicLoggingInterceptionAspect - TopicDao returned: TopicDao(id=1, name=pointer, description=Memory Management Effiectly)

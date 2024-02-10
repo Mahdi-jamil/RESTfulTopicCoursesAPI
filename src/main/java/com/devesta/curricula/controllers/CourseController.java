@@ -45,8 +45,10 @@ public class CourseController {
 
     @PostMapping("/{topicId}/courses")
     public ResponseEntity<CourseDao> addCourse(@RequestBody @Valid CourseDao courseDao, @PathVariable Long topicId) {
-
-
+        if(courseService.isExist(courseDao.getId())){
+            return ResponseEntity.status(HttpStatus.CONFLICT)
+                    .body(getCourse(courseDao.getId(), topicId).getBody());
+        }
 
         Course course = mapper.mapFrom(courseDao);
         Course savedCourse = courseService.addCourse(course, topicId);
