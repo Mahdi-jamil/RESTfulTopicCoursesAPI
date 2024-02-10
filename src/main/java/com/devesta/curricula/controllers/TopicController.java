@@ -67,9 +67,9 @@ public class TopicController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity removeTopic(@PathVariable Long id) {
+    public ResponseEntity<Void> removeTopic(@PathVariable Long id) {
         topicService.removeTopic(id);
-        return new ResponseEntity(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @PatchMapping("/{id}")

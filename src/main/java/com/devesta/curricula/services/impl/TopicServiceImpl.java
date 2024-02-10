@@ -32,10 +32,10 @@ public class TopicServiceImpl implements TopicService {
     }
 
     public Topic getTopic(Long id) {
-        return topicRepository.findById(id).isPresent() ?
-                topicRepository.findById(id).get() :
-                null;
+        Optional<Topic> optionalTopic = topicRepository.findById(id);
+        return optionalTopic.orElse(null);
     }
+
 
     public Topic addTopic(Topic topic) {
         return topicRepository.save(topic);

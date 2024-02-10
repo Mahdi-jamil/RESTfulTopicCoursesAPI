@@ -5,7 +5,6 @@ import com.devesta.curricula.domain.dao.TopicDao;
 import com.devesta.curricula.domain.entities.Topic;
 import com.devesta.curricula.services.TopicService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,13 +12,11 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.annotation.DirtiesContext;
-import org.springframework.test.annotation.Repeat;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import java.lang.annotation.Repeatable;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
@@ -41,7 +38,6 @@ public class TopicControllerIntegrationTests {
     @Test
     public void testThatTopicPostReturnHttp200() throws Exception {
         Topic topic = DataTestUtil.createTopicInstance();
-        topic.setId(null);
         String topicJson = objectMapper.writeValueAsString(topic);
 
         mockMvc.perform(
@@ -54,7 +50,6 @@ public class TopicControllerIntegrationTests {
     @Test
     public void testThatTopicPostReturnSavedTopic() throws Exception {
         Topic topic = DataTestUtil.createTopicInstance();
-        topic.setId(null);
         String topicJson = objectMapper.writeValueAsString(topic);
 
         mockMvc.perform(

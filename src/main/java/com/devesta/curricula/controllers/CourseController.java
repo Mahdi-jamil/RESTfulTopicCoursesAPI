@@ -74,8 +74,8 @@ public class CourseController {
     }
 
     @DeleteMapping("/{topicId}/courses/{courseId}")
-    public ResponseEntity removeCourse(@PathVariable Long courseId) {
+    public ResponseEntity<Void> removeCourse(@PathVariable Long courseId) {
         courseService.removeCourse(courseId);
-        return new ResponseEntity(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
