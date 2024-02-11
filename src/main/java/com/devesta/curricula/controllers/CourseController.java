@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/topics")
+@RequestMapping("/api/v1/topics")
 public class CourseController {
 
     private final CourseService courseService;

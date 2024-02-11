@@ -52,7 +52,7 @@ public class CourseControllerIntegrationTests {
         String courseJson = objectMapper.writeValueAsString(course);
 
         mockMvc.perform(
-                MockMvcRequestBuilders.post("/topics/{topicId}/courses", topic.getId())
+                MockMvcRequestBuilders.post("/api/v1/topics/{topicId}/courses", topic.getId())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseJson)
         ).andExpect(status().isCreated());
@@ -66,7 +66,7 @@ public class CourseControllerIntegrationTests {
         String courseJson = objectMapper.writeValueAsString(course);
 
         mockMvc.perform(
-                MockMvcRequestBuilders.post("/topics/{topicId}/courses", topic.getId())
+                MockMvcRequestBuilders.post("/api/v1/topics/{topicId}/courses", topic.getId())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseJson)
         ).andExpect(
@@ -82,7 +82,7 @@ public class CourseControllerIntegrationTests {
     public void testThatCourseGetAllReturnHttp200() throws Exception {
         Topic topic = DataTestUtil.createTopicInstance();
         mockMvc.perform(
-                MockMvcRequestBuilders.get("/topics/{topicId}/courses", topic.getId())
+                MockMvcRequestBuilders.get("/api/v1/topics/{topicId}/courses", topic.getId())
                         .contentType(MediaType.APPLICATION_JSON)
         ).andExpect(status().isOk());
     }
@@ -95,7 +95,7 @@ public class CourseControllerIntegrationTests {
         courseService.addCourse(course, topic.getId());
 
         mockMvc.perform(
-                MockMvcRequestBuilders.get("/topics/{topicId}/courses", topic.getId())
+                MockMvcRequestBuilders.get("/api/v1/topics/{topicId}/courses", topic.getId())
                         .contentType(MediaType.APPLICATION_JSON)
         ).andExpect(
                 jsonPath("$.content[0].id").isNumber()
@@ -116,7 +116,7 @@ public class CourseControllerIntegrationTests {
         topicService.addTopic(topic);
 
         mockMvc.perform(
-                MockMvcRequestBuilders.put("/topics/{topicId}/courses/{id}", topic.getId(), 99999)
+                MockMvcRequestBuilders.put("/api/v1/topics/{topicId}/courses/{id}", topic.getId(), 99999)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseJson)
         ).andExpect(status().isCreated());
@@ -134,7 +134,7 @@ public class CourseControllerIntegrationTests {
         String courseJson = objectMapper.writeValueAsString(courseDao);
 
         mockMvc.perform(
-                MockMvcRequestBuilders.put("/topics/{topicId}/courses/{id}", topic.getId(), added.getId())
+                MockMvcRequestBuilders.put("/api/v1/topics/{topicId}/courses/{id}", topic.getId(), added.getId())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseJson)
         ).andExpect(status().isOk());
@@ -153,7 +153,7 @@ public class CourseControllerIntegrationTests {
         String courseJson = objectMapper.writeValueAsString(courseDao);
 
         mockMvc.perform(
-                MockMvcRequestBuilders.put("/topics/{topicId}/courses/{id}", topic.getId(), added.getId())
+                MockMvcRequestBuilders.put("/api/v1/topics/{topicId}/courses/{id}", topic.getId(), added.getId())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseJson)
         ).andExpect(
@@ -182,7 +182,7 @@ public class CourseControllerIntegrationTests {
                 """;
 
         mockMvc.perform(
-                MockMvcRequestBuilders.post("/topics/1/courses")
+                MockMvcRequestBuilders.post("/api/v1/topics/1/courses")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseAsJson)
         ).andExpect(status().isBadRequest());
@@ -201,7 +201,7 @@ public class CourseControllerIntegrationTests {
                 """;
 
         mockMvc.perform(
-                MockMvcRequestBuilders.post("/topics/1/courses")
+                MockMvcRequestBuilders.post("/api/v1/topics/1/courses")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseAsJson)
         ).andExpect(status().isBadRequest());

@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 public class CourseServiceImpl implements CourseService {
     @Autowired
     private final CourseRepository courseRepository;
-
     @Autowired
     private final TopicService topicService;
 

@@ -17,7 +17,7 @@ import java.util.Optional;
 
 @RestController
 @Validated
-@RequestMapping("/topics")
+@RequestMapping("/api/v1/topics")
 public class TopicController {
 
     private final TopicService topicService;
