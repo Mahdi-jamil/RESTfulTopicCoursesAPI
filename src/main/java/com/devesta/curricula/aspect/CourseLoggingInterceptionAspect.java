@@ -1,6 +1,6 @@
 package com.devesta.curricula.aspect;
 
-import com.devesta.curricula.domain.dao.CourseDao;
+import com.devesta.curricula.domain.dto.CourseDto;
 import org.aspectj.lang.annotation.Aspect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +25,7 @@ public class CourseLoggingInterceptionAspect {
 
     @AfterReturning(pointcut = "execution(* com.devesta.curricula.controllers.CourseController.getCourse(Long, Long))",
             returning = "result")
-    public void afterReturningGetCourse(JoinPoint joinPoint, ResponseEntity<CourseDao> result) {
+    public void afterReturningGetCourse(JoinPoint joinPoint, ResponseEntity<CourseDto> result) {
         if (result.getStatusCode().is2xxSuccessful()) {
             logger.info("Course found and returned with status code " + result.getStatusCode());
             logger.info("CourseDao returned: " + result.getBody());
@@ -35,13 +35,13 @@ public class CourseLoggingInterceptionAspect {
     }
 
     @Before("execution(* com.devesta.curricula.controllers.CourseController.addCourse(..)) && args(courseDao, topicId)")
-    public void beforeAddCourse(JoinPoint joinPoint, CourseDao courseDao, Long topicId) {
-        logger.info("Adding new course: " + courseDao.toString() + " for topic with id: " + topicId);
+    public void beforeAddCourse(JoinPoint joinPoint, CourseDto courseDto, Long topicId) {
+        logger.info("Adding new course: " + courseDto.toString() + " for topic with id: " + topicId);
     }
 
     @AfterReturning(pointcut = "execution(* com.devesta.curricula.controllers.CourseController.addCourse(..))",
             returning = "result")
-    public void afterReturningAddCourse(JoinPoint joinPoint, ResponseEntity<CourseDao> result) {
+    public void afterReturningAddCourse(JoinPoint joinPoint, ResponseEntity<CourseDto> result) {
         if (result.getStatusCode() == HttpStatus.CREATED) {
             logger.info("New course added successfully with status code " + result.getStatusCode());
             logger.info("CourseDao returned: " + result.getBody());

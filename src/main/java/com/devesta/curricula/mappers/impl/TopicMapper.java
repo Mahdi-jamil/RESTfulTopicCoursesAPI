@@ -1,13 +1,13 @@
 package com.devesta.curricula.mappers.impl;
 
-import com.devesta.curricula.domain.dao.TopicDao;
+import com.devesta.curricula.domain.dto.TopicDto;
 import com.devesta.curricula.domain.entities.Topic;
 import com.devesta.curricula.mappers.Mapper;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TopicMapper implements Mapper<Topic, TopicDao> {
+public class TopicMapper implements Mapper<Topic, TopicDto> {
     private final ModelMapper mapper;
 
     public TopicMapper(ModelMapper mapper) {
@@ -15,12 +15,12 @@ public class TopicMapper implements Mapper<Topic, TopicDao> {
     }
 
     @Override
-    public TopicDao mapTo(Topic topic) {
-        return mapper.map(topic, TopicDao.class);
+    public TopicDto mapTo(Topic topic) {
+        return mapper.map(topic, TopicDto.class);
     }
 
     @Override
-    public Topic mapFrom(TopicDao topicDao) {
-        return mapper.map(topicDao, Topic.class);
+    public Topic mapFrom(TopicDto topicDto) {
+        return mapper.map(topicDto, Topic.class);
     }
 }

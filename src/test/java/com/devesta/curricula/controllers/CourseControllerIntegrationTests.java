@@ -1,8 +1,8 @@
 package com.devesta.curricula.controllers;
 
 import com.devesta.curricula.DataTestUtil;
-import com.devesta.curricula.domain.dao.CourseDao;
-import com.devesta.curricula.domain.dao.TopicDao;
+import com.devesta.curricula.domain.dto.CourseDto;
+import com.devesta.curricula.domain.dto.TopicDto;
 import com.devesta.curricula.domain.entities.Course;
 import com.devesta.curricula.domain.entities.Topic;
 import com.devesta.curricula.mappers.Mapper;
@@ -32,11 +32,11 @@ public class CourseControllerIntegrationTests {
     private final ObjectMapper objectMapper;
     private final CourseService courseService;
     private final TopicService topicService;
-    private final Mapper<Topic, TopicDao> mapper;
+    private final Mapper<Topic, TopicDto> mapper;
 
 
     @Autowired
-    public CourseControllerIntegrationTests(MockMvc mockMvc, CourseService courseService, TopicService topicService, Mapper<Topic, TopicDao> mapper) {
+    public CourseControllerIntegrationTests(MockMvc mockMvc, CourseService courseService, TopicService topicService, Mapper<Topic, TopicDto> mapper) {
         this.mockMvc = mockMvc;
         this.courseService = courseService;
         this.topicService = topicService;
@@ -108,10 +108,10 @@ public class CourseControllerIntegrationTests {
 
     @Test
     public void testThatPutCourseReturnHttp201WhenCourseNotFoundAndCreated() throws Exception {
-        CourseDao courseDao = DataTestUtil.createCourseDaoA();
-        String courseJson = objectMapper.writeValueAsString(courseDao);
+        CourseDto courseDto = DataTestUtil.createCourseDaoA();
+        String courseJson = objectMapper.writeValueAsString(courseDto);
 
-        TopicDao daoA = DataTestUtil.createTopicDaoA();
+        TopicDto daoA = DataTestUtil.createTopicDaoA();
         Topic topic = mapper.mapFrom(daoA);
         topicService.addTopic(topic);
 
@@ -129,9 +129,9 @@ public class CourseControllerIntegrationTests {
         Course course = DataTestUtil.createCourseInstance(topic);
         Course added = courseService.addCourse(course, topic.getId());
 
-        CourseDao courseDao = DataTestUtil.createCourseDaoA();
-        courseDao.setId(added.getId());
-        String courseJson = objectMapper.writeValueAsString(courseDao);
+        CourseDto courseDto = DataTestUtil.createCourseDaoA();
+        courseDto.setId(added.getId());
+        String courseJson = objectMapper.writeValueAsString(courseDto);
 
         mockMvc.perform(
                 MockMvcRequestBuilders.put("/api/v1/topics/{topicId}/courses/{id}", topic.getId(), added.getId())
@@ -147,21 +147,21 @@ public class CourseControllerIntegrationTests {
         Course course = DataTestUtil.createCourseInstance(topic);
         Course added = courseService.addCourse(course, topic.getId());
 
-        CourseDao courseDao = DataTestUtil.createCourseDaoA();
-        courseDao.setId(added.getId());
+        CourseDto courseDto = DataTestUtil.createCourseDaoA();
+        courseDto.setId(added.getId());
 
-        String courseJson = objectMapper.writeValueAsString(courseDao);
+        String courseJson = objectMapper.writeValueAsString(courseDto);
 
         mockMvc.perform(
                 MockMvcRequestBuilders.put("/api/v1/topics/{topicId}/courses/{id}", topic.getId(), added.getId())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(courseJson)
         ).andExpect(
-                jsonPath("$.id").value(courseDao.getId())
+                jsonPath("$.id").value(courseDto.getId())
         ).andExpect(
-                jsonPath("$.name").value(courseDao.getName())
+                jsonPath("$.name").value(courseDto.getName())
         ).andExpect(
-                jsonPath("$.description").value(courseDao.getDescription())
+                jsonPath("$.description").value(courseDto.getDescription())
         );
     }
 

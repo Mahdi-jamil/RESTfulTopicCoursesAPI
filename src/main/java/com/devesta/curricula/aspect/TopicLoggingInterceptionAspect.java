@@ -1,6 +1,6 @@
 package com.devesta.curricula.aspect;
 
-import com.devesta.curricula.domain.dao.TopicDao;
+import com.devesta.curricula.domain.dto.TopicDto;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
@@ -25,7 +25,7 @@ public class TopicLoggingInterceptionAspect {
 
     @AfterReturning(pointcut = "execution(* com.devesta.curricula.controllers.TopicController.getTopic(Long))",
             returning = "result")
-    public void afterReturningGetTopic(JoinPoint joinPoint, ResponseEntity<TopicDao> result) {
+    public void afterReturningGetTopic(JoinPoint joinPoint, ResponseEntity<TopicDto> result) {
         if (result.getStatusCode().is2xxSuccessful()) {
             logger.info("Topic found and returned with status code "+result.getStatusCode());
             logger.info("TopicDao returned: " + result.getBody());
@@ -35,13 +35,13 @@ public class TopicLoggingInterceptionAspect {
     }
 
     @Before("execution(* com.devesta.curricula.controllers.TopicController.addTopic(..)) && args(topicDao)")
-    public void beforeAddTopic(JoinPoint joinPoint, TopicDao topicDao) {
-        logger.info("Adding new topic: " + topicDao.toString());
+    public void beforeAddTopic(JoinPoint joinPoint, TopicDto topicDto) {
+        logger.info("Adding new topic: " + topicDto.toString());
     }
 
     @AfterReturning(pointcut = "execution(* com.devesta.curricula.controllers.TopicController.addTopic(..))",
             returning = "result")
-    public void afterReturningAddTopic(JoinPoint joinPoint, ResponseEntity<TopicDao> result) {
+    public void afterReturningAddTopic(JoinPoint joinPoint, ResponseEntity<TopicDto> result) {
         if (result.getStatusCode() == HttpStatus.CREATED) {
             logger.info("New topic added successfully with status code " + result.getStatusCode());
             logger.info("TopicDao returned: " + result.getBody());

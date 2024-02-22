@@ -1,7 +1,7 @@
 package com.devesta.curricula;
 
-import com.devesta.curricula.domain.dao.CourseDao;
-import com.devesta.curricula.domain.dao.TopicDao;
+import com.devesta.curricula.domain.dto.CourseDto;
+import com.devesta.curricula.domain.dto.TopicDto;
 import com.devesta.curricula.domain.entities.Course;
 import com.devesta.curricula.domain.entities.Topic;
 
@@ -26,16 +26,16 @@ public class DataTestUtil {
                 .build();
     }
 
-    public static TopicDao createTopicDaoA(){
-        return TopicDao.builder()
+    public static TopicDto createTopicDaoA(){
+        return TopicDto.builder()
                 .id(123L)
                 .name("java")
                 .description("language")
                 .build();
     }
 
-    public static TopicDao createTopicDaoB(){
-        return TopicDao.builder()
+    public static TopicDto createTopicDaoB(){
+        return TopicDto.builder()
                 .id(1234L)
                 .name("C++")
                 .description("language")
@@ -43,8 +43,8 @@ public class DataTestUtil {
     }
 
 
-    public static CourseDao createCourseDaoA() {
-        return CourseDao.builder()
+    public static CourseDto createCourseDaoA() {
+        return CourseDto.builder()
                 .id(createTopicDaoA().getId())
                 .name("OOP")
                 .description("Designs")

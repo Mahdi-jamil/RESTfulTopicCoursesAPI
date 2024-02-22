@@ -1,6 +1,6 @@
 package com.devesta.curricula.controllers;
 
-import com.devesta.curricula.domain.dao.CourseDao;
+import com.devesta.curricula.domain.dto.CourseDto;
 import com.devesta.curricula.domain.entities.Course;
 import com.devesta.curricula.mappers.Mapper;
 import com.devesta.curricula.services.CourseService;
@@ -21,22 +21,22 @@ public class CourseController {
 
     private final CourseService courseService;
 
-    private final Mapper<Course, CourseDao> mapper;
+    private final Mapper<Course, CourseDto> mapper;
 
     @Autowired
-    public CourseController(CourseServiceImpl courseService, Mapper<Course, CourseDao> mapper) {
+    public CourseController(CourseServiceImpl courseService, Mapper<Course, CourseDto> mapper) {
         this.courseService = courseService;
         this.mapper = mapper;
     }
 
     @GetMapping("/{topicId}/courses")
-    public Page<CourseDao> getAllCourses(@PathVariable Long topicId, Pageable pageable) {
+    public Page<CourseDto> getAllCourses(@PathVariable Long topicId, Pageable pageable) {
         Page<Course> allCourses = courseService.getAllCourses(pageable, topicId);
         return allCourses.map(mapper::mapTo);
     }
 
     @GetMapping("/{topicId}/courses/{courseId}")
-    public ResponseEntity<CourseDao> getCourse(@PathVariable Long courseId, @PathVariable Long topicId) {
+    public ResponseEntity<CourseDto> getCourse(@PathVariable Long courseId, @PathVariable Long topicId) {
         Optional<Course> courseFounded = Optional.ofNullable(courseService.getCourse(courseId, topicId));
         return courseFounded.map(course ->
                         new ResponseEntity<>(mapper.mapTo(course), HttpStatus.OK))
@@ -44,24 +44,24 @@ public class CourseController {
     }
 
     @PostMapping("/{topicId}/courses")
-    public ResponseEntity<CourseDao> addCourse(@RequestBody @Valid CourseDao courseDao, @PathVariable Long topicId) {
-        if(courseService.isExist(courseDao.getId())){
+    public ResponseEntity<CourseDto> addCourse(@RequestBody @Valid CourseDto courseDto, @PathVariable Long topicId) {
+        if(courseService.isExist(courseDto.getId())){
             return ResponseEntity.status(HttpStatus.CONFLICT)
-                    .body(getCourse(courseDao.getId(), topicId).getBody());
+                    .body(getCourse(courseDto.getId(), topicId).getBody());
         }
 
-        Course course = mapper.mapFrom(courseDao);
+        Course course = mapper.mapFrom(courseDto);
         Course savedCourse = courseService.addCourse(course, topicId);
         return new ResponseEntity<>(mapper.mapTo(savedCourse), HttpStatus.CREATED);
     }
 
     @PutMapping("/{topicId}/courses/{courseId}")
-    public ResponseEntity<CourseDao> updateCourse(@PathVariable Long topicId
-            , @RequestBody CourseDao courseDao
+    public ResponseEntity<CourseDto> updateCourse(@PathVariable Long topicId
+            , @RequestBody CourseDto courseDto
             , @PathVariable Long courseId) {
 
-        courseDao.setId(courseId);
-        Course course = mapper.mapFrom(courseDao);
+        courseDto.setId(courseId);
+        Course course = mapper.mapFrom(courseDto);
         boolean exist = courseService.isExist(courseId);
 
         if (exist) {

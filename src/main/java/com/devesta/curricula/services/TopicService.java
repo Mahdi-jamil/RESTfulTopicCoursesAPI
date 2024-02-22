@@ -1,6 +1,5 @@
 package com.devesta.curricula.services;
 
-import com.devesta.curricula.domain.dao.TopicDao;
 import com.devesta.curricula.domain.entities.Topic;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

@@ -1,4 +1,4 @@
-package com.devesta.curricula.domain.dao;
+package com.devesta.curricula.domain.dto;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CourseDao {
+public class CourseDto {
 
     @NotNull
     @Min(value = 1, message = "ID must be positive")
@@ -27,6 +27,6 @@ public class CourseDao {
 
     @Valid
     @NotNull(message = "Topic cannot be null")
-    private TopicDao topic;
+    private TopicDto topic;
 
 }

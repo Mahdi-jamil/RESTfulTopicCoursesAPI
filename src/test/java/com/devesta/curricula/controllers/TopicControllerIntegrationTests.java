@@ -1,7 +1,7 @@
 package com.devesta.curricula.controllers;
 
 import com.devesta.curricula.DataTestUtil;
-import com.devesta.curricula.domain.dao.TopicDao;
+import com.devesta.curricula.domain.dto.TopicDto;
 import com.devesta.curricula.domain.entities.Topic;
 import com.devesta.curricula.services.TopicService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -129,8 +129,8 @@ public class TopicControllerIntegrationTests {
 
     @Test
     public void testThatPutTopicReturnHttp404WhenTopicNotFound() throws Exception {
-        TopicDao topicDao = DataTestUtil.createTopicDaoA();
-        String topicJson = objectMapper.writeValueAsString(topicDao);
+        TopicDto topicDto = DataTestUtil.createTopicDaoA();
+        String topicJson = objectMapper.writeValueAsString(topicDto);
 
         mockMvc.perform(
                 MockMvcRequestBuilders.put("/api/v1/topics/{id}", 99999)
@@ -144,8 +144,8 @@ public class TopicControllerIntegrationTests {
         Topic topic = DataTestUtil.createTopicInstance();
         Topic added = topicService.addTopic(topic);
 
-        TopicDao topicDao = DataTestUtil.createTopicDaoA();
-        String topicJson = objectMapper.writeValueAsString(topicDao);
+        TopicDto topicDto = DataTestUtil.createTopicDaoA();
+        String topicJson = objectMapper.writeValueAsString(topicDto);
 
         mockMvc.perform(
                 MockMvcRequestBuilders.put("/api/v1/topics/{id}", added.getId())
@@ -159,21 +159,21 @@ public class TopicControllerIntegrationTests {
         Topic topic = DataTestUtil.createTopicInstance();
         Topic added = topicService.addTopic(topic);
 
-        TopicDao topicDao = DataTestUtil.createTopicDaoB();
-        topicDao.setId(added.getId());
+        TopicDto topicDto = DataTestUtil.createTopicDaoB();
+        topicDto.setId(added.getId());
 
-        String topicJson = objectMapper.writeValueAsString(topicDao);
+        String topicJson = objectMapper.writeValueAsString(topicDto);
 
         mockMvc.perform(
                 MockMvcRequestBuilders.put("/api/v1/topics/{id}", added.getId())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(topicJson)
         ).andExpect(
-                jsonPath("$.id").value(topicDao.getId())
+                jsonPath("$.id").value(topicDto.getId())
         ).andExpect(
-                jsonPath("$.name").value(topicDao.getName())
+                jsonPath("$.name").value(topicDto.getName())
         ).andExpect(
-                jsonPath("$.description").value(topicDao.getDescription())
+                jsonPath("$.description").value(topicDto.getDescription())
         );
     }
 
